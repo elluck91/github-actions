@@ -33,4 +33,4 @@ jobs:
           echo test, and deploy your project.
 
       - name: Export version values
-        run: echo ${GITHUB_SHA::7} > _version.json
+        run: echo '${GITHUB_SHA::7}' > _version.json
