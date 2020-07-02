@@ -31,10 +31,5 @@ jobs:
         #   run: |
         #     echo Add other actions to build,
         #     echo test, and deploy your project.
-
-        with: # Set the secret as an input
-          TEST: "It works!"
-        env: # Or as an environment variable
-          TEST: "It works!"
       - name: Export version values
         run: node app.js
