@@ -1,0 +1,25 @@
+##########
+# Collab #
+##########
+collab_staging:
+  # Auto deploy on master.
+  auto_deploy_on: refs/heads/develop
+  # Wait for our ci pipeline to pass.
+  required_contexts: ["ci_collab"]
+  environment: alpha
+  payload:
+    image: bluescape/collab
+    tag: ${{ short_sha }}
+
+####################
+# Worker Framework #
+####################
+worker_staging:
+  # Auto deploy on master.
+  auto_deploy_on: refs/heads/develop
+  # Wait for our ci pipeline to pass.
+  required_contexts: ["ci_worker"]
+  environment: alpha
+  payload:
+    image: bluescape/worker
+    tag: ${{ short_sha }}
