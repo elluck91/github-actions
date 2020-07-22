@@ -3,7 +3,7 @@
 ##########
 collab_staging:
   # Auto deploy on master.
-  auto_deploy_on: refs/heads/develop
+  auto_deploy_on: refs/heads/master
   # Wait for our ci pipeline to pass.
   required_contexts: ["ci_collab"]
   environment: alpha
@@ -16,7 +16,7 @@ collab_staging:
 ####################
 worker_staging:
   # Auto deploy on master.
-  auto_deploy_on: refs/heads/develop
+  auto_deploy_on: refs/heads/master
   # Wait for our ci pipeline to pass.
   required_contexts: ["ci_worker"]
   environment: alpha
