@@ -1,6 +1,6 @@
 
 # .github/workflows/ci_worker.yml
-name: CI_WORKER
+name: ci_worker
 on: 
   push:
     paths:

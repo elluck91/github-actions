@@ -1,6 +1,6 @@
 
 # .github/workflows/ci_collab.yml
-name: CI_COLLAB
+name: ci_collab
 on:
   push:
     paths:

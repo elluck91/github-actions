@@ -19,7 +19,7 @@ worker_staging:
   auto_deploy_on: refs/heads/master
   # Wait for our ci pipeline to pass.
   required_contexts: ["ci_worker"]
-  environment: alpha
+  environment: beta
   payload:
     image: bluescape/worker
     tag: ${{ short_sha }}
